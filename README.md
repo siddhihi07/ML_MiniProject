@@ -1,17 +1,18 @@
-##ML-Based Air Quality and CO₂ Emission Analysis
-Project Overview
+# ML-Based Air Quality Forecasting
 
-This project explores time-series forecasting and machine learning models to analyze and predict CO₂ emissions and overall air quality trends.
-We started with CO₂ data (from Mauna Loa Observatory and other sources) as a baseline and plan to extend it into a complete air quality profile, including:
+## Project Overview
+This project extends prior work on **CO₂ forecasting** into a **multivariate air quality profile**.  
+Our goal is to analyze not just CO₂, but also humidity, temperature, precipitation, and other gases, 
+and identify which **sectors (transport, industry, household, etc.)** contribute most to emissions.
 
-Temperature
+## Current Progress
+- Literature review drafted (6 major research papers summarized).
+- Baseline ARIMA forecast implemented on existing CO₂ dataset.
+- Repo structure prepared for future work (data ingestion, modeling, dashboard).
 
-Humidity
+## Next Steps
+- Acquire real-time city-level air quality data (temperature, humidity, other gases).
+- Extend models to multivariate forecasting (tree ensembles, LSTM, Transformers).
+- Add sector-wise attribution and explainability (SHAP, feature importance).
+- Build Streamlit dashboard for visualization and policy insights.
 
-Precipitation
-
-Other greenhouse gases (CH₄, NOₓ, etc.)
-
-Sector-wise emission analysis (transportation, industry, households, etc.)
-
-The ultimate goal is to identify which sectors contribute the most to air pollution and highlight where reduction efforts will have the biggest impact.
